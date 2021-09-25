@@ -1,15 +1,24 @@
-const fs = require( 'fs' );
 const {localDB} = require("./index");
+// // const {localDbChunk} = require( './src/localDbChunk' );
 
-const ldb = localDB('./test.json');
+// const ldb = localDB("./db.json");
 
 // ldb.update( {"name": "Abm Sourav"}, "ABM Sourav" );
 
-// ldb.update({"greetings": "Hello Universe"}, "Hello Universe...");
+// // setTimeout(function() {
+	// ldb.set(data)
+	// 	.catch( (err) => console.log(err) );
+// }, 500)
 
 // ldb.remove({name: "ABM Sourav.."});
 
-// ldb.set({"email": "keramotul.islam@gmail.com"})
-// 	.then(() => ldb.update({"greetings": "Hello Universe"}, "Hello World"))
-// 	.then( () =>  ldb.remove({"name": "ABM Sourav"}))
-// .then( () =>  ldb.get().then(data => console.log(data)));
+// ldb.remove({name: "Keramot UL Islam"})
+// 	.catch( err => console.log(err) );
+
+// ldb.update({"name": "Sourav"}, {name: "AbmSourav"}).catch(error => console.log(error));
+
+// ldb.search("name", "AbmSourav", false).then( data => console.log(data) );
+
+// ldb.searchByValue("AbmSourav", true).then( data => console.log(data) );
+
+// ldb.insert({"id": "abm"}, {"Nick Name": "Abm Sourav"});

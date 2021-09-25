@@ -2,6 +2,7 @@ const path = require( 'path' );
 const fs = require( 'fs' );
 
 const localDbChunk = {
+
 	writeFile: async (data, filePath = null) => {
 		const file = filePath == null ? path.resolve(path.dirname(__dirname), './localdb.json') : filePath;
 
